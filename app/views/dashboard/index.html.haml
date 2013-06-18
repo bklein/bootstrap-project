@@ -1,0 +1,13 @@
+.row-fluid
+  .span3.feed-links
+    .well
+      %ul#feeds-tabs.nav.nav-tabs.nav-stacked
+        - %w[ Bob Dick Harry].each do |name|
+          %li=link_to name, "##{name.parameterize}", data: { toggle: 'tab' }
+
+
+  .span9
+    .tab-content
+      - %w[ Bob Dick Harry].each do |name|
+        .tab-pane{ id: name.parameterize }
+          %h3 #{name}

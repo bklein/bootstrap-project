@@ -32,9 +32,16 @@ gem 'haml'
 
 # Use unicorn as the app server
 # gem 'unicorn'
+#
+gem 'thin'
 
 # Deploy with Capistrano
 # gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
+#
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+end
