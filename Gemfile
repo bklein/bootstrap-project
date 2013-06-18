@@ -35,6 +35,8 @@ gem 'haml'
 #
 gem 'thin'
 
+gem 'devise'
+
 # Deploy with Capistrano
 # gem 'capistrano'
 
@@ -44,4 +46,6 @@ gem 'thin'
 group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'spork-rails'
+  gem 'capybara'
 end
